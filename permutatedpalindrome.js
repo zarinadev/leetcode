@@ -34,3 +34,26 @@ function isPalindromePermutation(str) {
   }
   return false;
 }
+
+// TC: O(n) where n is str.length
+// SC: O(1) because there are 26 unique char in english alphabet
+
+// "Tact Coa"
+// tact coa 
+//        ^ 
+// {
+  
+
+//   "o": 1
+ 
+// }
+// ["o", "b"]
+
+//create obj
+//convert str to lowercase 
+//loop tru the str
+//check for spaces, we can skip
+//assign char to obj key
+//delete 
+//else we assign to 1
+//if more than 1 it means its not palindrome permutation
