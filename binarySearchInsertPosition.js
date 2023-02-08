@@ -1,3 +1,6 @@
+
+
+
 var searchInsert = function(nums, target) {
     let pivot, left = 0, right = nums.length -1
     while (left<= right){
