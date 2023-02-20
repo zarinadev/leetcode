@@ -11,3 +11,21 @@ function power(base, exponent) {
 
   return base * power(base, exponent - 1);
 }
+
+
+function findTarget(nums, target) {
+  let middleIndex = Math.floor(nums.length / 2) 
+  if (nums.length === 1 && nums[0] != target){
+    return false
+  }
+  else if (target === nums[middleIndex]) {
+    return true
+  } else if (target< nums[middleIndex]){
+    return findTarget(target, nums.slice(0,mid))
+  }else if (target > nums[middleIndex]) {
+    return findTarget(target, nums.slice(middleIndex))
+  }
+  
+}
+  
+console.log(findTarget([-2,0,4,7,12,15] , 7))

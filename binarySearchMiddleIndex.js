@@ -50,7 +50,7 @@
 // SC : 
 
 
-
+// if array unsorted than apply linear search, if sorted apply binary search 
 
 
 var search = function(nums, target) {
@@ -71,3 +71,45 @@ var search = function(nums, target) {
 };
 
 
+
+// function findTarget(nums, target) {
+//     let leftIndex = 0;
+//     let rightIndex = nums.length -1 
+//     while( leftIndex < rightIndex){
+//         let middleIndex = Math.floor((leftIndex + rightIndex) / 2)
+//     }
+//     if(target === nums[middleIndex]){
+//         return middleIndex
+//     }
+//     if(target < nums[middleIndex] ){
+//         rightIndex = middleIndex -1
+//     }else {
+//         leftIndex = middleIndex +1
+//     }
+//     return -1
+// };
+
+// console.log(findTarget([-2,0,4,7,12,15] , 7))
+
+//TC: O(logn)
+//SC: 
+
+
+function findTarget(nums, target) {
+            let leftIndex = 0;
+        let rightIndex = nums.length -1 
+        while( leftIndex < rightIndex){
+            let middleIndex = Math.floor((leftIndex + rightIndex) / 2)
+        }
+        if(target === nums[middleIndex]){
+            return middleIndex
+        }
+        if(target < nums[middleIndex] ){
+            rightIndex = middleIndex -1
+        }else {
+            leftIndex = middleIndex +1
+        }
+        return -1
+    };
+    
+    console.log(findTarget([-2,0,4,7,12,15] , 7))
